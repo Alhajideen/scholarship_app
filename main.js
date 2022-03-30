@@ -83,7 +83,7 @@ selectSubjects4.addEventListener("change", function () {
     loopSubjects6()
 })
 selectSubjects5.addEventListener("change", function () {
-    let subjectIndex5 = selectSubjects4.value
+    let subjectIndex5 = selectSubjects5.value
     subjects.splice(subjectIndex5, 1)
     loopSubjects6()
 })
