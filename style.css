@@ -21,7 +21,7 @@
 
 .background{margin: 5px;}
 .background input,select{height: 35px; border: 1px solid grey; border-radius: 20px; padding: 2px;}
-.background h2,h3,p{font-size: var(--body-text); margin:10px; color: white;}
+.background h2,h3,p{font-size: var(--body-text); margin:10px; color: white; text-align: center;}
 .background h1{color: white;}
 .contents, .subjects, .scores{font-size: calc(0.8(var(--body-text)));}
 label{color: red; font-size: 15px;}
@@ -81,7 +81,7 @@ button{
 
 @media (max-width:485px ){
     .scores{width: 47%;}
-    .background h1,h2,h3,p{font-size:12px; margin: 5px 0px 5px 0px;}
+    .background h1,h2,h3,p{font-size:12px; margin: 5px 0px 5px 0px; text-align: center;}
     .background input{height: 15px; font-size: 10px;}
     .background select{height: 20px; font-size: 10px;}
     .ageGender{display: block;}
@@ -95,6 +95,7 @@ button{
     .gender select{width: 100%; margin-left: 0px;}
     .scores{width:97%;}
     .subjectMobile{display: block;}
+    .subjectMobile h2{text-align: center; font-size: 12px;}
     .subjectandGrade{display: none;}
     .container{
         width: 90%;
