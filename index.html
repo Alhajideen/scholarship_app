@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reword Scholarship App</title>
+    <script src="chart.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <form>
+                <div class="enterName">
+                    <div class="firstName">
+                        <h3>First Name</h3>
+                        <input type="text" name="firstName" id="firstname" placeholder="Enter your First Name"
+                            class="contents">
+                        <label for="firstNameError" id="firstNameError"></label>
+                    </div>
+                    <div class="lastName">
+                        <h3>Last Name</h3>
+                        <input type="text" name="lastName" id="lastName" placeholder="Enter your Last Name"
+                            class="contents">
+                        <label for="lastNameError" id="lastNameError"></label>
+                    </div>
+                </div> <br>
+                <div class="ageGender">
+                    <div class="age">
+                        <h3>Age</h3>
+                        <input type="number" name="age" id="enterAge" placeholder="Enter your Age" class="contents">
+                        <label for="ageError" id="ageError"></label>
+                    </div>
+                    <div class="gender">
+                        <h3>Gender</h3>
+                        <select name="gender" id="gender" class="contents">
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <label for="genderError" id="genderError"></label>
+                        </select>
+                    </div>
+                </div> <br>
+
+                <div class="phoneNumber">
+                    <h3>Mobile Number</h3>
+                    <input type="number" name="phoneNumber" id="phoneNumber" class="contents"
+                        placeholder="Enter Mobile Number">
+                    <label for="phoneNumberError" id="phoneNumberError"></label>
+                </div> <br>
+                <div class="schoolSection">
+                    <h3>School</h3>
+                    <input type="text" name="enterSchool" id="enterSchool" placeholder="Enter School Name"
+                        class="contents">
+                    <label for="schoolError" id="schoolError"></label>
+                </div> <br>
+
+                <div class="continent">
+                    <h3>Select Continent/Country</h3>
+                    <select name="continent" id="continent" class="continents">
+                        <option value="emptyContinent">Select Continent</option>
+                        <option value="africaSelect">Africa</option>
+                        <option value="asiaSelect">Asia</option>
+                        <option value="southAmerica">South America</option>
+                        <option value="northAmerica">North America</option>
+                        <option value="rotw">Rest of the world</option>
+                    </select>
+                    <select name="country" id="country" class="country">
+                        <option value="">Select Country</option>
+                    </select>
+                </div> <br>
+
+                <div class="subjectGrades">
+                    <div class="subjectandGrade">
+                        <div class="subjectName">
+                            <h2>Subject</h2>
+                        </div>
+                        <div class="gradeName">
+                            <h2>Scores</h2>
+                        </div>
+                    </div>
+                    <div class="subjectMobile">
+                        <h2>Subjects and Scores </h2>
+                    </div>
+                    <div class="allSubjects">
+                        <select name="mathematics" id="mathematics" class="subjects">
+                            <option value="mathematics">Mathematics</option>
+                        </select>
+                        <input type="number" placeholder="Enter Score" class="scores" id="scores1">
+                    </div> <br>
+                    <div class="allSubjects">
+                        <select name="englighLan" id="englishLang" class="subjects">
+                            <option value="engLang">English Language</option>
+                        </select>
+                        <input type="number" placeholder="Enter Score" class="scores" id="scores2">
+                    </div><br>
+                    <div class="allSubjects">
+                        <select name="selectSubjects" id="selectSubjects" class="subjects">
+                            <option id="selectSubjects" value="">Select Subjects</option>
+                        </select>
+                        <input type="number" placeholder="Enter Score" class="scores" id="scores3">
+                    </div><br>
+                    <div class="allSubjects2">
+                        <select name="selectSubjects2" id="selectSubjects2" class="subjects">
+                            <option value="">Select Subjects</option>
+                        </select>
+                        <input type="number" placeholder="Enter Score" class="scores" id="scores4">
+                    </div><br>
+                    <div class="allSubjects3">
+                        <select name="selectSubjects3" id="selectSubjects3" class="subjects">
+                            <option value="">Select Subjects</option>
+                        </select>
+                        <input type="number" placeholder="Enter Score" class="scores" id="scores5">
+                    </div><br>
+                    <div class="allSubjects4">
+                        <select name="selectSubjects4" id="selectSubjects4" class="subjects">
+                            <option value="">Select Subjects</option>
+                        </select>
+                        <input type="number" placeholder="Enter Score" class="scores" id="scores6">
+                    </div> <br>
+                    <div class="allSubjects5">
+                        <select name="selectSubjects5" id="selectSubjects5" class="subjects">
+                            <option value="">Select Subjects</option>
+                        </select>
+                        <input type="number" placeholder="Enter Score" class="scores" id="scores7">
+                    </div><br>
+                    <div class="allSubjects6">
+                        <select name="selectSubjects6" id="selectSubjects6" class="subjects">
+                            <option value="">Select Subjects</option>
+                        </select>
+                        <input type="number" placeholder="Enter Score" class="scores" id="scores8">
+                    </div>
+                </div>
+                <button id="regBtn" type="button">Check Total Score and Eligibility</button>
+            </form>
+
+            <div class="summary">
+                <h1 id="summaryHead"></h1>
+                <h2 id="ageSummary"></h2>
+                <h2 id="totalSubjectscore"></h2>
+                <h2 id="averageSummary"></h2>
+                <h2 id="averagePoints"></h2>
+                <h2 id="countryPoint"></h2>
+                <h1 id="cumulative">
+                    </h>
+                    <h1 id="remark"></h1>
+            </div>
+            <div class="jsChart">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

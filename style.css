@@ -1,0 +1,99 @@
+*{padding: 0%; margin: 0%;}
+
+:root{
+    --body-text: 1.6vw;
+    --box-width: 98%;
+}
+
+.background{background: linear-gradient(rgba(4, 2, 70, 0.37),rgba(4, 2, 70, 0.438)), url(photo-1553095066-5014bc7b7f2d.jpg);
+    padding: 50px;
+    /* background-image: url(photo-1553095066-5014bc7b7f2d.jpg);     */
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    padding: 20px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+.background{margin: 5px;}
+.background input,select{height: 35px; border: 1px solid grey; border-radius: 20px; padding: 2px;}
+.background h2,h3,p{font-size: var(--body-text); margin:10px; color: white;}
+.background h1{color: white;}
+.contents, .subjects, .scores{font-size: calc(0.8(var(--body-text)));}
+label{color: red; font-size: 15px;}
+
+.container{width: 60%; margin: auto; }
+.container .enterName{display: flex; width: 100%;}
+.container .enterName .firstName{width: 50%;}
+.lastName{width: 50%;}
+.firstName input{width: 98%;}
+.lastName input{width: 95%; margin-left: 5px;}
+
+.ageGender{display: flex;}
+.age, .gender{width: 50%;}
+.age input{width: 98%;}
+.gender select{width: 98%; margin-left: 5px;}
+
+.phoneNumber input{width: var(--box-width);}
+.schoolSection input{width: var(--box-width);}
+
+.continent{width: 100%;}
+.continents {width: 48%;}
+.country{margin-left: 0px; width: 50%;}
+.continent h3{text-align: center;}
+
+
+.subjectandGrade{display: flex; margin: auto; justify-content: space-evenly;}
+.subjectGrades{width: 100%;}
+.subjects {width: 48%;}
+.subjectMobile{display: none;}
+.scores{width: 50%;}
+
+button{
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    border-radius: 20px;
+}
+
+.summary h1,h2{text-align: left; font-size:var(--body-text);}
+
+.jsChart{background-color: white!important; border-radius: 20px; padding: 10px;}
+
+
+@media (max-width:900px){
+.scores{width:99%;}
+.subjects {width: 100%; margin-top: 10px; margin-bottom: 10px;}
+.continents {width: 100%; margin-top: 10px; margin-bottom: 10px;}
+.country{margin-left: 0px; width: 100%;}
+.background input{height: 27px;}
+.background select{height: 30px;}
+.subjectMobile{display: block;}
+.subjectandGrade{display: none;}
+}
+
+@media (max-width:485px ){
+    .scores{width: 47%;}
+    .background h1,h2,h3,p{font-size:12px; margin: 5px 0px 5px 0px;}
+    .background input{height: 15px; font-size: 10px;}
+    .background select{height: 20px; font-size: 10px;}
+    .ageGender{display: block;}
+    .age, .gender{width: 100%}
+    .container .enterName{display: block; width: 100%;}
+    .container .enterName .firstName{width: 100%;}
+    .lastName{width: 98%;}
+    .background{margin: 0px;}
+    .firstName input{width: 98%;}
+    .lastName input{width: 100%; margin-left: 0px;}
+    .gender select{width: 100%; margin-left: 0px;}
+    .scores{width:97%;}
+    .subjectMobile{display: block;}
+    .subjectandGrade{display: none;}
+}
